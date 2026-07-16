@@ -1,0 +1,54 @@
+.hero-visual {
+  height: min(70vh, 680px);
+  overflow: visible;
+  border-radius: 3px;
+  box-shadow: 0 34px 100px rgba(80, 65, 48, 0.18);
+}
+
+.hero-visual::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 24px -24px -24px 24px;
+  border: 1px solid rgba(183, 149, 109, 0.55);
+  pointer-events: none;
+}
+
+.hero-visual::after {
+  border-radius: 3px;
+}
+
+.hero-visual > img {
+  display: block;
+  border-radius: 3px;
+  object-position: center 48%;
+}
+
+.visual-note {
+  left: 28px;
+  bottom: 26px;
+  padding-left: 18px;
+  border-left: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 900px) {
+  .hero-visual {
+    height: min(68vh, 680px);
+    margin-right: 18px;
+  }
+
+  .hero-visual::before {
+    inset: 16px -16px -16px 16px;
+  }
+}
+
+@media (max-width: 540px) {
+  .hero-visual {
+    height: 540px;
+    margin-right: 10px;
+  }
+
+  .hero-visual::before {
+    inset: 10px -10px -10px 10px;
+  }
+}
