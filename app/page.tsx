@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import PhotoGallery from "./components/PhotoGallery";
 
 const whatsapp = "https://wa.me/5594992361015";
 
@@ -9,6 +10,17 @@ const services = [
   { n:"02", title:"Massagem terapêutica", text:"Técnicas que favorecem relaxamento, mobilidade e bem-estar em um ambiente preparado para acolher.", image:"/Instagram-07-16-2026_11_47_PM.png", cls:"massage" },
   { n:"03", title:"Estética avançada", text:"Cuidados faciais e corporais personalizados, com tecnologia, planejamento e acompanhamento profissional.", image:"/Instagram-07-16-2026_11_50_PM.png", cls:"aesthetic" },
   { n:"04", title:"Depilação a laser", text:"Tecnologia aplicada com precisão e protocolos ajustados às características de cada pele.", image:"/pexels-meraki-laser.jpg", cls:"laser" },
+];
+
+const galleryItems = [
+  { src: "/foto1.png", alt: "Equipe Meraki" },
+  { src: "/foto2.png", alt: "Equipe Meraki" },
+  { src: "/foto3.png", alt: "Equipe Meraki" },
+  { src: "/foto4.png", alt: "Equipe Meraki" },
+  { src: "/foto5.png", alt: "Equipe Meraki" },
+  { src: "/foto6.png", alt: "Equipe Meraki" },
+  { src: "/foto7.png", alt: "Cuidado estético Meraki" },
+  { src: "/foto8.png", alt: "Fachada da Meraki Clínica" },
 ];
 
 const journey = [
@@ -52,7 +64,7 @@ export default function Home(){
       <div className="service-grid">{services.map(s=><article className={s.cls} key={s.n} data-reveal><div className="service-image"><img src={s.image} alt="" loading="lazy"/></div><span>{s.n}</span><h3>{s.title}</h3><p>{s.text}</p><a href={whatsapp} target="_blank" rel="noreferrer" aria-label={`Agendar ${s.title}`}>Saiba mais <b>↗</b></a></article>)}</div>
     </section>
 
-    <section className="quote"><div className="quote-image" data-reveal><img src="/Instagram-07-16-2026_11_48_PM.png" alt="Corpo, mente e emoção — o cuidado completo na Meraki"/></div><div className="quote-copy" data-reveal><p className="eyebrow"><i/> Medicina com proximidade</p><blockquote>“Seu atendimento não começa no procedimento. Começa quando você se sente verdadeiramente ouvido.”</blockquote><p>Planejamento responsável, comunicação clara e cuidado individualizado em todas as etapas.</p><a href={whatsapp} target="_blank" rel="noreferrer">Falar com nossa equipe <span>↗</span></a></div></section>
+    <section className="quote"><div className="quote-image" data-reveal><PhotoGallery items={galleryItems}/></div><div className="quote-copy" data-reveal><p className="eyebrow"><i/> Medicina com proximidade</p><blockquote>“Seu atendimento não começa no procedimento. Começa quando você se sente verdadeiramente ouvido.”</blockquote><p>Planejamento responsável, comunicação clara e cuidado individualizado em todas as etapas.</p><a href={whatsapp} target="_blank" rel="noreferrer">Falar com nossa equipe <span>↗</span></a></div></section>
 
     <section className="experience section" id="experiencia">
       <div className="experience-title" data-reveal><p className="eyebrow"><i/> A experiência Meraki</p><h2>Leve por fora.<br/><em>Profundo no cuidado.</em></h2></div>
