@@ -1,8 +1,40 @@
 .hero-visual {
+  --notch: clamp(48px, 6vw, 96px);
   height: min(70vh, 680px);
   overflow: visible;
   border-radius: 3px;
   box-shadow: 0 34px 100px rgba(80, 65, 48, 0.18);
+}
+
+.hero-visual > img,
+.hero-visual::after {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, var(--notch) 100%, 0 calc(100% - var(--notch)));
+}
+
+.visual-stroke {
+  position: absolute;
+  z-index: 3;
+  left: -16px;
+  bottom: calc(var(--notch) * 0.32);
+  width: calc(var(--notch) * 2.6);
+  height: 9px;
+  background: var(--champagne);
+  transform-origin: left center;
+  transform: rotate(-42deg);
+  box-shadow: 0 12px 26px rgba(183, 149, 109, 0.4);
+  pointer-events: none;
+}
+
+.visual-stroke::after {
+  content: "";
+  position: absolute;
+  left: 30%;
+  top: -14px;
+  width: 55%;
+  height: 3px;
+  background: var(--ink);
+  opacity: 0.6;
+  transform: rotate(4deg);
 }
 
 .hero-visual::before {

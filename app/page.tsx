@@ -50,7 +50,7 @@ export default function Home(){
         <p className="hero-lead">Saúde, massagem e estética avançada em protocolos personalizados, com acolhimento e atenção aos detalhes.</p>
         <div className="hero-actions"><a href={whatsapp} target="_blank" rel="noreferrer">Agende sua experiência <b>↗</b></a><a href="#especialidades">Conheça a Meraki <span>↓</span></a></div>
       </div>
-      <div className="hero-visual"><img src="/Instagram-07-16-2026_11_51_PM.png" alt="Ambiente interno da Meraki Clínica"/><div className="visual-note"><small>Meraki significa</small><b>fazer algo<br/>com a alma.</b></div></div>
+      <div className="hero-visual"><img src="/Instagram-07-16-2026_11_51_PM.png" alt="Ambiente interno da Meraki Clínica"/><i className="visual-stroke" aria-hidden="true"/><div className="visual-note"><small>Meraki significa</small><b>fazer algo<br/>com a alma.</b></div></div>
       <p className="hero-side">PARAUAPEBAS · PA — 2026</p>
     </section>
 
