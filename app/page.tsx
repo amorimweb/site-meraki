@@ -5,9 +5,9 @@ import { useEffect, useState } from "react";
 const whatsapp = "https://wa.me/5594992361015";
 
 const services = [
-  { n:"01", title:"Clínica médica", text:"Avaliação individualizada, escuta atenta e protocolos orientados para o seu momento de saúde.", image:"/pexels-meraki-consulta.jpg", cls:"consult" },
-  { n:"02", title:"Massagem terapêutica", text:"Técnicas que favorecem relaxamento, mobilidade e bem-estar em um ambiente preparado para acolher.", image:"/pexels-meraki-massage.jpg", cls:"massage" },
-  { n:"03", title:"Estética avançada", text:"Cuidados faciais e corporais personalizados, com tecnologia, planejamento e acompanhamento profissional.", image:"/pexels-meraki-massage.jpg", cls:"aesthetic" },
+  { n:"01", title:"Clínica médica", text:"Avaliação individualizada, escuta atenta e protocolos orientados para o seu momento de saúde.", image:"/Instagram-07-16-2026_11_49_PM.png", cls:"consult" },
+  { n:"02", title:"Massagem terapêutica", text:"Técnicas que favorecem relaxamento, mobilidade e bem-estar em um ambiente preparado para acolher.", image:"/Instagram-07-16-2026_11_47_PM.png", cls:"massage" },
+  { n:"03", title:"Estética avançada", text:"Cuidados faciais e corporais personalizados, com tecnologia, planejamento e acompanhamento profissional.", image:"/Instagram-07-16-2026_11_50_PM.png", cls:"aesthetic" },
   { n:"04", title:"Depilação a laser", text:"Tecnologia aplicada com precisão e protocolos ajustados às características de cada pele.", image:"/pexels-meraki-laser.jpg", cls:"laser" },
 ];
 
@@ -38,7 +38,7 @@ export default function Home(){
         <p className="hero-lead">Saúde, massagem e estética avançada em protocolos personalizados, com acolhimento e atenção aos detalhes.</p>
         <div className="hero-actions"><a href={whatsapp} target="_blank" rel="noreferrer">Agende sua experiência <b>↗</b></a><a href="#especialidades">Conheça a Meraki <span>↓</span></a></div>
       </div>
-      <div className="hero-visual"><img src="/pexels-meraki-massage.jpg" alt="Mulher recebendo massagem em ambiente de bem-estar"/><div className="visual-note"><small>Meraki significa</small><b>fazer algo<br/>com a alma.</b></div></div>
+      <div className="hero-visual"><img src="/Instagram-07-16-2026_11_51_PM.png" alt="Ambiente interno da Meraki Clínica"/><div className="visual-note"><small>Meraki significa</small><b>fazer algo<br/>com a alma.</b></div></div>
       <p className="hero-side">PARAUAPEBAS · PA — 2026</p>
     </section>
 
@@ -52,7 +52,7 @@ export default function Home(){
       <div className="service-grid">{services.map(s=><article className={s.cls} key={s.n} data-reveal><div className="service-image"><img src={s.image} alt="" loading="lazy"/></div><span>{s.n}</span><h3>{s.title}</h3><p>{s.text}</p><a href={whatsapp} target="_blank" rel="noreferrer" aria-label={`Agendar ${s.title}`}>Saiba mais <b>↗</b></a></article>)}</div>
     </section>
 
-    <section className="quote"><div className="quote-image" data-reveal><img src="/pexels-meraki-consulta.jpg" alt="Profissional de saúde conversando com paciente"/></div><div className="quote-copy" data-reveal><p className="eyebrow"><i/> Medicina com proximidade</p><blockquote>“Seu atendimento não começa no procedimento. Começa quando você se sente verdadeiramente ouvido.”</blockquote><p>Planejamento responsável, comunicação clara e cuidado individualizado em todas as etapas.</p><a href={whatsapp} target="_blank" rel="noreferrer">Falar com nossa equipe <span>↗</span></a></div></section>
+    <section className="quote"><div className="quote-image" data-reveal><img src="/Instagram-07-16-2026_11_48_PM.png" alt="Corpo, mente e emoção — o cuidado completo na Meraki"/></div><div className="quote-copy" data-reveal><p className="eyebrow"><i/> Medicina com proximidade</p><blockquote>“Seu atendimento não começa no procedimento. Começa quando você se sente verdadeiramente ouvido.”</blockquote><p>Planejamento responsável, comunicação clara e cuidado individualizado em todas as etapas.</p><a href={whatsapp} target="_blank" rel="noreferrer">Falar com nossa equipe <span>↗</span></a></div></section>
 
     <section className="experience section" id="experiencia">
       <div className="experience-title" data-reveal><p className="eyebrow"><i/> A experiência Meraki</p><h2>Leve por fora.<br/><em>Profundo no cuidado.</em></h2></div>
